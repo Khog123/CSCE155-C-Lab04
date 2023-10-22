@@ -84,7 +84,19 @@ printf("\n");
    printf(" = %d\n", sum1);
   //7. Compute the summation of even numbers 1 thru n and print
   //   the result; example (n=5): 2 + 4 = 6
-
+  int sum2=0;
+  if (n%2! = 0){
+    n--;
+  }
+   for(int i = 2; i <= n; i+ = 2){
+    printf("%d",i);
+    sum2+ = i;
+    if(i! = n){
+      printf(" + ");
+    }
+   }
+   printf(" = %d\n", sum2);
+   
   //8. Write a solution to the following variation of the FizzBuzz
   //   problem.  Print out integers 1 thru n, one to a line, except
   //   that if the integer is divisible by 7 print "Foo" instead.
