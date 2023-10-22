@@ -96,13 +96,22 @@ printf("\n");
     }
    }
    printf(" = %d\n", sum2);
-   
+
   //8. Write a solution to the following variation of the FizzBuzz
   //   problem.  Print out integers 1 thru n, one to a line, except
   //   that if the integer is divisible by 7 print "Foo" instead.
   //   If the integer is divisible by 11 print "Bar" instead.  If
   //   the integer is divisible by both 7 and 11, print "FooBar"
   //   instead.
-
+  for(int i = 1; i<=n; i++){
+    if(i%7 == 0 && i%11 == 0){
+      printf("FooBar\n");
+    }
+    else if(i%7 == 0){
+    printf("Foo\n");
+  }
+  else if(i%7 == 0){
+  printf("Bar\n");
+  }
   return 0;
 }
